@@ -16,7 +16,8 @@ namespace Projeto_8.br.com.projeto.DAO
         #region Conexão
         private MySqlConnection conexao;
 
-        public ClienteDAO() {
+        public ClienteDAO()
+        {
             conexao = new Conexao().GetConnection();
         }
         #endregion
@@ -58,7 +59,7 @@ namespace Projeto_8.br.com.projeto.DAO
             }
             catch (Exception erro)
             {
-                MessageBox.Show("Aconteceu o erro " + erro); 
+                MessageBox.Show("Aconteceu o erro " + erro);
             }
         }
         #endregion

@@ -41,3 +41,4 @@ C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_8\obj\Debug\Projeto_8.
 C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_8\obj\Debug\Projeto_8.csproj.Up2Date
 C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_8\obj\Debug\Projeto_8.exe
 C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_8\obj\Debug\Projeto_8.pdb
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_8\obj\Debug\Projeto_8.br.com.projeto.VIEW.frmFuncionarios.resources
