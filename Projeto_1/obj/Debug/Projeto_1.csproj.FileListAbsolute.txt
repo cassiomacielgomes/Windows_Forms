@@ -1,0 +1,10 @@
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\bin\Debug\Projeto_1.exe.config
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\bin\Debug\Projeto_1.exe
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\bin\Debug\Projeto_1.pdb
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.csproj.AssemblyReference.cache
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.Form1.resources
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.Properties.Resources.resources
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.csproj.GenerateResource.cache
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.csproj.CoreCompileInputs.cache
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.exe
+C:\Users\cassio.mgomes\source\repos\Windows_Forms\Projeto_1\obj\Debug\Projeto_1.pdb
