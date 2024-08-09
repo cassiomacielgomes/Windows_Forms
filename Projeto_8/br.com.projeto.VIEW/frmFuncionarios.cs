@@ -53,7 +53,14 @@ namespace Projeto_8.br.com.projeto.VIEW
             dao.cadastrarFuncionario(obj);
 
             //Recarregar o dataGrid
-            //dg_consulta_funcionario.DataSource = dao.listarCliente();
+            dg_consulta_funcionario.DataSource = dao.listarFuncionario();
+        }
+
+        private void frmFuncionarios_Load(object sender, EventArgs e)
+        {
+            FuncionarioDAO dao = new FuncionarioDAO();
+
+            dg_consulta_funcionario.DataSource = dao.listarFuncionario();
         }
     }
 }
