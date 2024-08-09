@@ -130,6 +130,7 @@
             this.btn_excluir.TabIndex = 10;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = false;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // btn_salvar
             // 

@@ -154,5 +154,37 @@ namespace Projeto_8.br.com.projeto.DAO
             }
         }
         #endregion
+
+        #region Excluir
+        public void excluirFuncionario(Funcionarios obj)
+        {
+            try
+            {
+                //1º passo - Definir comando SQL
+                string sql = @"
+                DELETE FROM tb_funcionarios
+                WHERE id=@id";
+
+                //2º passo - Organizar o comando SQL
+                MySqlCommand executarcmd = new MySqlCommand(sql, conexao);
+
+                executarcmd.Parameters.AddWithValue("@id", obj.codigo);
+
+                //3º passo - Abrir Conexão e executar o comando sql
+                conexao.Open();
+                executarcmd.ExecuteNonQuery();
+
+                MessageBox.Show("Funcionário Excluído com Sucesso!");
+
+                //4º passo - Fechar Conexão
+                conexao.Close();
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro " + erro);
+            }
+        }
+        #endregion
     }
 }
