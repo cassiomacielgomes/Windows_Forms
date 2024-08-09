@@ -116,6 +116,7 @@
             this.btn_editar.TabIndex = 11;
             this.btn_editar.Text = "Editar";
             this.btn_editar.UseVisualStyleBackColor = false;
+            this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // btn_excluir
             // 
@@ -596,6 +597,7 @@
             this.dg_consulta_funcionario.Name = "dg_consulta_funcionario";
             this.dg_consulta_funcionario.Size = new System.Drawing.Size(443, 230);
             this.dg_consulta_funcionario.TabIndex = 8;
+            this.dg_consulta_funcionario.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_consulta_funcionario_CellContentDoubleClick);
             // 
             // btn_pesquisar_consulta
             // 

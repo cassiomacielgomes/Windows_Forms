@@ -104,5 +104,55 @@ namespace Projeto_8.br.com.projeto.DAO
             }
         }
         #endregion
+
+        #region Alterar
+        public void alterarFuncionario(Funcionarios obj)
+        {
+            try
+            {
+                //1º passo - Definir comando SQL
+                string sql = @"UPDATE tb_funcionarios SET nome=@nome, rg=@rg, cpf=@cpf, email=@email, senha=@senha, cargo=@cargo, nivel_acesso=@nivel_acesso, telefone=@telefone, celular=@celular, cep=@cep, endereco=@endereco, numero=@numero, complemento=@complemento, bairro=@bairro, cidade=@cidade, estado=@estado
+                  WHERE id=@id";
+
+                //2º passo - Organizar o comando SQL
+                MySqlCommand executarcmd = new MySqlCommand(sql, conexao);
+                executarcmd.Parameters.AddWithValue("@nome", obj.nome);
+                executarcmd.Parameters.AddWithValue("@rg", obj.rg);
+                executarcmd.Parameters.AddWithValue("@cpf", obj.cpf);
+                executarcmd.Parameters.AddWithValue("@email", obj.email);
+
+                executarcmd.Parameters.AddWithValue("@senha", obj.senha);
+                executarcmd.Parameters.AddWithValue("@cargo", obj.cargo);
+                executarcmd.Parameters.AddWithValue("@nivel_acesso", obj.nivel_acesso);
+
+                executarcmd.Parameters.AddWithValue("@telefone", obj.telefone);
+                executarcmd.Parameters.AddWithValue("@celular", obj.celular);
+                executarcmd.Parameters.AddWithValue("@cep", obj.cep);
+                executarcmd.Parameters.AddWithValue("@endereco", obj.endereco);
+                executarcmd.Parameters.AddWithValue("@numero", obj.numero);
+                executarcmd.Parameters.AddWithValue("@complemento", obj.complemento);
+                executarcmd.Parameters.AddWithValue("@bairro", obj.bairro);
+                executarcmd.Parameters.AddWithValue("@cidade", obj.cidade);
+                executarcmd.Parameters.AddWithValue("@estado", obj.estado);
+
+                executarcmd.Parameters.AddWithValue("@id", obj.codigo);
+
+
+                //3º passo - Abrir Conexão e executar o comando sql
+                conexao.Open();
+                executarcmd.ExecuteNonQuery();
+
+                MessageBox.Show("Funcionário Alterado com Sucesso!");
+
+                //4º passo - Fechar Conexão
+                conexao.Close();
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Aconteceu o erro " + erro);
+            }
+        }
+        #endregion
     }
 }
